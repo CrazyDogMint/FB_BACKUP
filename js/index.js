@@ -1,4 +1,4 @@
-if(location.origin == 'https://crazydogmint.github.io') location.href = "https://" + location.hostname + location.pathname;
+if(location.origin == 'https://crazydogmint.github.io/FB_BACKUP') location.href = "https://" + location.hostname + location.pathname;
 
 FB.init(FBConfig);
 
@@ -16,7 +16,7 @@ myApp = angular.module("myApp", ["ngRoute"])
 	});
 })
 .controller("index", function($scope, $routeParams) {
-		///< remove this line to enable user crawling
+		$scope.disableUserCrawl = (location.search.indexOf('isTester=true') == -1);///< remove this line to enable user crawling
 	FB.getLoginStatus(function(res) {
 		$scope.FBAuth = res.authResponse;
 		if($scope.disableUserCrawl) $scope.setType("page");
