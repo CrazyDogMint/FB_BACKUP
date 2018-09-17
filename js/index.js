@@ -1,4 +1,4 @@
-if(location.origin == 'https://crazydogmint.github.io/FB_BACKUP') location.href = "https://" + location.hostname + location.pathname;
+if(location.origin == 'https://crazydogmint.github.io') location.href = "https://" + location.hostname + location.pathname;
 
 FB.init(FBConfig);
 
