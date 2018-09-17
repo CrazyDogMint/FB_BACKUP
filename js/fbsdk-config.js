@@ -1,5 +1,5 @@
 var FBConfig = {
-	version    : 'v3.1',
+	version    : 'v2.11',
 	appId      : 501152137015688,
 	xfbml      : false,
 	status     : true
